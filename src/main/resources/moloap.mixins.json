@@ -3,7 +3,7 @@
 	"package": "com.betts.moloap.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"MoLoAPAdvancementMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
