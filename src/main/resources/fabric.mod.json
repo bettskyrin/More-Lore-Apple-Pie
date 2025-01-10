@@ -23,7 +23,7 @@
 		]
 	},
 	"mixins": [
-
+		"moloap.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.10",
