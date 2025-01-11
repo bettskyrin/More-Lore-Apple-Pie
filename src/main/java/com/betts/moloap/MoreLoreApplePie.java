@@ -1,5 +1,7 @@
 package com.betts.moloap;
 
+import com.betts.moloap.data.loot.packs.MoLoAPLoot;
+import com.betts.moloap.world.entity.npc.MoLoAPVillagerTrades;
 import com.betts.moloap.world.item.MoLoAPItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,5 +16,7 @@ public class MoreLoreApplePie implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("More Lore: Apple Pie initializing!");
 		MoLoAPItems.initialize();
+		MoLoAPLoot.modify();
+		MoLoAPVillagerTrades.register();
 	}
 }
