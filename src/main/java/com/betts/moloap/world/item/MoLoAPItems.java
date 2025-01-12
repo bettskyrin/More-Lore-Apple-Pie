@@ -20,7 +20,7 @@ public class MoLoAPItems {
         return ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MOD_ID, itemName));
     }
 
-    public static void initialize() {
+    public static void register() {
         // Seamless Creative Mode tab item
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FOOD_AND_DRINKS).register(entries -> {
             entries.addAfter(Items.PUMPKIN_PIE, MoLoAPItems.APPLE_PIE);

@@ -15,7 +15,7 @@ public class MoreLoreApplePie implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("More Lore: Apple Pie initializing!");
-		MoLoAPItems.initialize();
+		MoLoAPItems.register();
 		MoLoAPLoot.modify();
 		MoLoAPVillagerTrades.register();
 	}
