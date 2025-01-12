@@ -1,6 +1,5 @@
 package com.betts.moloap.data.loot.packs;
 
-import com.betts.moloap.MoreLoreApplePie;
 import com.betts.moloap.world.item.MoLoAPItems;
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.minecraft.world.item.Items;
@@ -12,8 +11,6 @@ import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 
 public class MoLoAPLoot {
     public static void modify() {
-        MoreLoreApplePie.LOGGER.info("Modifying chest loot pools...");
-
         LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
             if (BuiltInLootTables.VILLAGE_PLAINS_HOUSE.equals(key) && source.isBuiltin()) {
                 LootPool.Builder chestPool = LootPool.lootPool()

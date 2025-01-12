@@ -11,7 +11,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 
 import static com.betts.moloap.MoreLoreApplePie.MOD_ID;
-import static net.minecraft.world.item.Items.COMPOSTER;
 import static net.minecraft.world.item.Items.registerItem;
 
 public class MoLoAPItems {
@@ -28,8 +27,6 @@ public class MoLoAPItems {
         });
         // Make Compostable
         CompostingChanceRegistry.INSTANCE.add(MoLoAPItems.APPLE_PIE, 1.0F);
-
-         // LOGGER.info("Registering items..."); // For Developer Use
 
     }
 }
