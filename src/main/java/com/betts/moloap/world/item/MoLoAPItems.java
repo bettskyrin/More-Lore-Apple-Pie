@@ -14,11 +14,7 @@ import static com.betts.moloap.MoreLoreApplePie.MOD_ID;
 import static net.minecraft.world.item.Items.registerItem;
 
 public class MoLoAPItems {
-    public static final Item APPLE_PIE = registerItem(itemId("apple_pie"), Item::new, new Item.Properties().food(MoLoAPFoods.APPLE_PIE));
-
-    private static ResourceKey<Item> itemId(String itemName) {
-        return ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MOD_ID, itemName));
-    }
+    public static final Item APPLE_PIE = registerItem(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MOD_ID, "apple_pie")), Item::new, new Item.Properties().food(MoLoAPFoods.APPLE_PIE));
 
     public static void register() {
         // Seamless Creative Mode tab item
