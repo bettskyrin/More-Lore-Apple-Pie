@@ -12,7 +12,7 @@ public class MoLoAPVillagerTrades {
     public static void register() {
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 2, factories -> {
             factories.add((entity, randomSource) -> new MerchantOffer(
-                    new ItemCost(Items.EMERALD), new ItemStack(MoLoAPItems.APPLE_PIE).copyWithCount(4), 4, 1, 0.05F)
+                    new ItemCost(Items.EMERALD), new ItemStack(MoLoAPItems.APPLE_PIE).copyWithCount(4), 4, 5, 0.05F)
             );
         });
     }
