@@ -1,37 +1,28 @@
 {
 	"schemaVersion": 1,
-	"id": "mlapplepie",
+	"id": "moloap",
 	"version": "${version}",
 	"name": "More Lore: Apple Pie",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Add a sweet new treat to your game—apple pie!",
 	"authors": [
-		"Me!"
+		"Kyrin Betts (Kr1s1s)"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/bettskyrin/More-Lore-Apple-Pie/",
+		"issues": "https://github.com/bettskyrin/More-Lore-Apple-Pie/issues"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/mlapplepie/icon.png",
+	"license": "GPL-3.0",
+	"icon": "assets/moloap/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.betts.applepie.MoreLoreApplePie"
-		],
-		"fabric-datagen": [
-			"com.betts.applepie.MoreLoreApplePieDataGenerator"
+			"com.betts.moloap.MoreLoreApplePie"
 		]
 	},
-	"mixins": [
-		"mlapplepie.mixins.json"
-	],
 	"depends": {
 		"fabricloader": ">=0.16.10",
 		"minecraft": "~1.21.4",
 		"java": ">=21",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
